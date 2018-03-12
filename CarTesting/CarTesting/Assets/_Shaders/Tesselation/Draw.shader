@@ -5,6 +5,9 @@
 		_MainTex ("Texture", 2D) = "white" {}
 		_Coordinate("Coordinate", vector) = (0,0,0,0)
 		_Color("Draw Color", Color) = (1,0,0,0)
+
+		_Size ("Size", Range(1,5000)) = 5000
+		_Strenght("Strenght", Range(0,100)) = 100
 	}
 	SubShader
 	{
@@ -34,6 +37,7 @@
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
 			fixed4 _Coordinate, _Color;
+			half _Size,_Strenght;
 
 			
 			v2f vert (appdata v)
@@ -48,8 +52,8 @@
 			{
 				// sample the texture
 				fixed4 col = tex2D(_MainTex, i.uv);
-				float draw = pow(saturate(1- distance(i.uv, _Coordinate.xy)), 5000);
-				fixed4 drawcol = _Color * (draw * 100);
+				float draw = pow(saturate(1- distance(i.uv, _Coordinate.xy)), _Size);
+				fixed4 drawcol = _Color * (draw * _Strenght);
 				return saturate(col+drawcol);
 			}
 			ENDCG

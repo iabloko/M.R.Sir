@@ -1,8 +1,4 @@
-﻿// Colorful FX - Unity Asset
-// Copyright (c) 2015 - Thomas Hourdel
-// http://www.thomashourdel.com
-
-Shader "Hidden/Colorful/DynamicLookup"
+﻿Shader "Hidden/Colorful/DynamicLookup"
 {
 	Properties
 	{

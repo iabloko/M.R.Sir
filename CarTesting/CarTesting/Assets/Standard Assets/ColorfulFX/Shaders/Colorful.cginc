@@ -1,7 +1,3 @@
-// Colorful FX - Unity Asset
-// Copyright (c) 2015 - Thomas Hourdel
-// http://www.thomashourdel.com
-
 /* Constants */
 #define PI 3.14159265
 

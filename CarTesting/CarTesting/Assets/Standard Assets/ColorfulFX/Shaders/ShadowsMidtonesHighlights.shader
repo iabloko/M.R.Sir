@@ -1,8 +1,4 @@
-﻿// Colorful FX - Unity Asset
-// Copyright (c) 2015 - Thomas Hourdel
-// http://www.thomashourdel.com
-
-Shader "Hidden/Colorful/Shadows Midtones Highlights"
+﻿Shader "Hidden/Colorful/Shadows Midtones Highlights"
 {
 	Properties
 	{

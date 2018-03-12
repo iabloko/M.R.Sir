@@ -1,7 +1,3 @@
-// Colorful FX - Unity Asset
-// Copyright (c) 2015 - Thomas Hourdel
-// http://www.thomashourdel.com
-
 Shader "Hidden/Colorful/Sharpen"
 {
 	Properties

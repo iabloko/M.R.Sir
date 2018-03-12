@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityStandardAssets.Vehicles.Car
-{
+
     [System.Serializable]
     public class Controller_Rover_system : System.Object
     {
@@ -41,8 +40,8 @@ namespace UnityStandardAssets.Vehicles.Car
     public class Controller_Rover : MonoBehaviour
     {
 
-        [SerializeField] private WheelEffects[] m_WheelEffects = new WheelEffects[2];
-        [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[2];
+        //[SerializeField] private WheelEffects[] m_WheelEffects = new WheelEffects[2];
+        //[SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[2];
         [SerializeField] private float m_SlipLimit;
 
 
@@ -232,6 +231,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
         private void CheckForWheelSpin()
         {
+            /*
             for (int i = 0; i < 2; i++)
             {
                 WheelHit wheelHit;
@@ -242,10 +242,10 @@ namespace UnityStandardAssets.Vehicles.Car
                     m_WheelEffects[i].EmitTyreSmoke();
                 }
                 m_WheelEffects[i].EndSkidTrail();
-            }
+            }*/
         }
     }
-}
+
 
 
 

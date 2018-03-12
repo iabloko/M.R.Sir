@@ -2,19 +2,18 @@ namespace Colorful
 {
 	using UnityEngine;
 
-	[HelpURL("http://www.thomashourdel.com/colorful/doc/camera-effects/frost.html")]
 	[ExecuteInEditMode]
 	[AddComponentMenu("Colorful FX/Camera Effects/Frost")]
 	public class Frost : BaseEffect
 	{
 		[Range(0f, 16f), Tooltip("Frosting strength.")]
-		public float Scale = 1.2f;
+		public float Scale = 0f;
 
 		[Range(-100f, 100f), Tooltip("Smoothness of the vignette effect.")]
-		public float Sharpness = 40f;
+		public float Sharpness = -50f;
 
 		[Range(0f, 100f), Tooltip("Amount of vignetting on screen.")]
-		public float Darkness = 35f;
+		public float Darkness = 50f;
 
 		[Tooltip("Should the effect be applied like a vignette ?")]
 		public bool EnableVignette = true;

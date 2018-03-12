@@ -20,7 +20,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
             if (skidParticles_organic == null)
             {
-                Debug.LogWarning("Не найдена система частиц, создайте её для этой машины", gameObject);
+                Debug.LogWarning("NEt", gameObject);
             }
             else
             {
