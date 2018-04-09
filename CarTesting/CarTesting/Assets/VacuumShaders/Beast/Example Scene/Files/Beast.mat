@@ -76,7 +76,7 @@ Material:
     - _UVSec: 0
     - _V_WIRE_TEssellation_Phong: 0.5
     - _V_WIRE_Tessellation_BinormalCoef: 0.05
-    - _V_WIRE_Tessellation_DispStrength: 0.5
+    - _V_WIRE_Tessellation_DispStrength: 0.65
     - _V_WIRE_Tessellation_DispTex_Source: 0
     - _V_WIRE_Tessellation_DispTex_UVSet: 0
     - _V_WIRE_Tessellation_EdgeLength: 16

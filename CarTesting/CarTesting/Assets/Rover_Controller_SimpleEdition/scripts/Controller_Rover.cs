@@ -46,6 +46,7 @@ using UnityEngine;
 
 
         [Header("WHEELS SETUP")]
+
         public List<Controller_Rover_system> Wheel_Settings;
 
         [Header("ENGINE POWER SETTINGS")]
@@ -125,7 +126,7 @@ using UnityEngine;
         
         public void FixedUpdate()
         {
-            CheckForWheelSpin();
+            //CheckForWheelSpin();
 
             CurrentSpeed = RoverRigidBody.velocity.magnitude;
 
