@@ -9,8 +9,9 @@
 # File's will be ignore
 
 _TexturesAndMaterial/
-PostProcessing/
 PostProcessing-2/
+LUT/
+
 
 # Visual Studio 2015 cache directory
 /.vs/

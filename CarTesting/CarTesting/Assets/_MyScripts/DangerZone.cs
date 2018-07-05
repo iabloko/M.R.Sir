@@ -16,7 +16,7 @@ public class DangerZone : MonoBehaviour
         TriggerEnterOn.Invoke();
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider _Buggy)
     {
         if (_Buggy.gameObject.tag == "Player")
         TriggerEnterOff.Invoke();

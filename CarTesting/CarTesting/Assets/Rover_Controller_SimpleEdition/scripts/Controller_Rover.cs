@@ -39,10 +39,10 @@ using UnityEngine;
 
     public class Controller_Rover : MonoBehaviour
     {
-
-        //[SerializeField] private WheelEffects[] m_WheelEffects = new WheelEffects[2];
-        //[SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[2];
-        [SerializeField] private float m_SlipLimit;
+#region Off
+    //[SerializeField] private WheelEffects[] m_WheelEffects = new WheelEffects[2];
+    //[SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[2];
+    [SerializeField] private float m_SlipLimit;
 
 
         [Header("WHEELS SETUP")]
@@ -109,8 +109,8 @@ using UnityEngine;
         private float SleepDelay = 2f;
         private float SleepDelay_current;
         private float TorqueCalc;
-
-        public void Wheel_Render(Controller_Rover_system Wheel_proces)
+#endregion
+    public void Wheel_Render(Controller_Rover_system Wheel_proces)
         {
             Vector3 Wheel_position;
             Quaternion Wheel_rotation;

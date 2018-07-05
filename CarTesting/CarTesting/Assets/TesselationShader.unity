@@ -434,6 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4996e9b7eb854b9459450bbba9351646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Buggy: {fileID: 0}
 --- !u!1 &743587521
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,19 +604,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &931155357 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198883130498535486, guid: 2cdbecf49e13dda429b8e71eff842a9e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1633404474}
 --- !u!4 &1117440385 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4152066111116596, guid: 2cdbecf49e13dda429b8e71eff842a9e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1633404474}
---- !u!198 &1160769561 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198722938569194376, guid: 2cdbecf49e13dda429b8e71eff842a9e,
     type: 2}
   m_PrefabInternal: {fileID: 1633404474}
 --- !u!1 &1277488879
@@ -648,11 +639,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &1396625980 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198983856928947596, guid: 2cdbecf49e13dda429b8e71eff842a9e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1633404474}
 --- !u!1 &1463546839
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1471675368
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -779,10 +765,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8c21d1bf2544a479ddce4351508bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Camera: {fileID: 743587524}
   _drawShader: {fileID: 4800000, guid: e378373c27feea942bec8b76ef2405b8, type: 3}
   WheelesBL: {fileID: 1978633519}
   WheelesBR: {fileID: 1736125118}
+  _Terrain: {fileID: 0}
+  _brushSize: 0
+  _brushStrength: 0
 --- !u!1 &1475707047
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +869,21 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.199
       objectReference: {fileID: 0}
+    - target: {fileID: 114250639398976446, guid: 195c791ba8fda5e4ea9ac9bead2494fb,
+        type: 2}
+      propertyPath: _Terrain
+      value: 
+      objectReference: {fileID: 1521341522}
+    - target: {fileID: 114250639398976446, guid: 195c791ba8fda5e4ea9ac9bead2494fb,
+        type: 2}
+      propertyPath: _brushSize
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114250639398976446, guid: 195c791ba8fda5e4ea9ac9bead2494fb,
+        type: 2}
+      propertyPath: _brushStrength
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 195c791ba8fda5e4ea9ac9bead2494fb, type: 2}
   m_IsPrefabParent: 0
@@ -955,7 +958,7 @@ Prefab:
         type: 2}
       propertyPath: skidParticles
       value: 
-      objectReference: {fileID: 2115345557}
+      objectReference: {fileID: 0}
     - target: {fileID: 1919232081063486, guid: 2cdbecf49e13dda429b8e71eff842a9e, type: 2}
       propertyPath: m_Name
       value: leaves
@@ -964,7 +967,7 @@ Prefab:
         type: 2}
       propertyPath: skidParticles2
       value: 
-      objectReference: {fileID: 1396625980}
+      objectReference: {fileID: 0}
     - target: {fileID: 1633525078183918, guid: 2cdbecf49e13dda429b8e71eff842a9e, type: 2}
       propertyPath: m_Name
       value: leaves2
@@ -977,37 +980,37 @@ Prefab:
         type: 2}
       propertyPath: skidParticles1
       value: 
-      objectReference: {fileID: 2115345557}
+      objectReference: {fileID: 0}
     - target: {fileID: 114501142657679200, guid: 2cdbecf49e13dda429b8e71eff842a9e,
         type: 2}
       propertyPath: skidParticles_organic
       value: 
-      objectReference: {fileID: 931155357}
+      objectReference: {fileID: 0}
     - target: {fileID: 114501142657679200, guid: 2cdbecf49e13dda429b8e71eff842a9e,
         type: 2}
       propertyPath: skidParticles3
       value: 
-      objectReference: {fileID: 1160769561}
+      objectReference: {fileID: 0}
     - target: {fileID: 114816286509949392, guid: 2cdbecf49e13dda429b8e71eff842a9e,
         type: 2}
       propertyPath: skidParticles1
       value: 
-      objectReference: {fileID: 2115345557}
+      objectReference: {fileID: 0}
     - target: {fileID: 114816286509949392, guid: 2cdbecf49e13dda429b8e71eff842a9e,
         type: 2}
       propertyPath: skidParticles2
       value: 
-      objectReference: {fileID: 1396625980}
+      objectReference: {fileID: 0}
     - target: {fileID: 114816286509949392, guid: 2cdbecf49e13dda429b8e71eff842a9e,
         type: 2}
       propertyPath: skidParticles3
       value: 
-      objectReference: {fileID: 1160769561}
+      objectReference: {fileID: 0}
     - target: {fileID: 114816286509949392, guid: 2cdbecf49e13dda429b8e71eff842a9e,
         type: 2}
       propertyPath: skidParticles_organic
       value: 
-      objectReference: {fileID: 931155357}
+      objectReference: {fileID: 0}
     - target: {fileID: 4508042907261320, guid: 2cdbecf49e13dda429b8e71eff842a9e, type: 2}
       propertyPath: m_RootOrder
       value: 1
@@ -2466,6 +2469,31 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198883130498535486, guid: 2cdbecf49e13dda429b8e71eff842a9e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198883130498535486, guid: 2cdbecf49e13dda429b8e71eff842a9e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198883130498535486, guid: 2cdbecf49e13dda429b8e71eff842a9e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198883130498535486, guid: 2cdbecf49e13dda429b8e71eff842a9e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198883130498535486, guid: 2cdbecf49e13dda429b8e71eff842a9e,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 199086283778877436, guid: 2cdbecf49e13dda429b8e71eff842a9e, type: 2}
     - {fileID: 198809515588932624, guid: 2cdbecf49e13dda429b8e71eff842a9e, type: 2}
@@ -2615,6 +2643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79ea5207a0896f48ace894ae04a6e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _frameRate: 30
 --- !u!114 &1671690222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2818,8 +2847,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 60, y: 120, z: 0}
---- !u!198 &2115345557 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 198885769232783052, guid: 2cdbecf49e13dda429b8e71eff842a9e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1633404474}
